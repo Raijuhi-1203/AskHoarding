@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:layout_alignParentBottom="true"
+    android:background="@drawable/gradient"
+    android:gravity="center|bottom"
+    android:orientation="horizontal"
+    android:weightSum="4">
+
+    <LinearLayout
+        android:id="@+id/home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="0dp"
+            android:padding="5dp"
+            android:src="@drawable/homef"
+            android:tint="@color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/custom_font"
+            android:padding="5dp"
+            android:text="Home"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="12dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="0dp"
+            android:padding="5dp"
+            android:src="@drawable/menu"
+            android:tint="@color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/custom_font"
+            android:padding="5dp"
+            android:text="Menu"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="12dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+<!--    <LinearLayout-->
+<!--        android:id="@+id/notify"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_weight="1"-->
+<!--        android:orientation="vertical">-->
+
+<!--        <ImageView-->
+<!--            android:layout_width="35dp"-->
+<!--            android:layout_height="35dp"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:layout_marginTop="0dp"-->
+<!--            android:padding="5dp"-->
+<!--            android:src="@drawable/notification"-->
+<!--            android:tint="@color/white" />-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:layout_marginTop="0dp"-->
+<!--            android:layout_marginBottom="5dp"-->
+<!--            android:fontFamily="@font/custom_font"-->
+<!--            android:padding="5dp"-->
+<!--            android:text="Notification"-->
+<!--            android:textAlignment="center"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:textSize="12dp"-->
+<!--            android:textStyle="bold" />-->
+
+<!--    </LinearLayout>-->
+
+    <LinearLayout
+        android:id="@+id/cat"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="0dp"
+            android:padding="5dp"
+            android:src="@drawable/categoryf"
+            android:tint="@color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/custom_font"
+            android:padding="5dp"
+            android:text="Category"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="12dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/jpost"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="0dp"
+            android:padding="5dp"
+            android:src="@drawable/bookmark"
+            android:tint="@color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/custom_font"
+            android:padding="5dp"
+            android:text="JobPost"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="12dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_margin="3dp"
+    android:padding="8dp"
+    android:background="@drawable/box"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_margin="3dp"
+        android:id="@+id/click"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/jobnm"
+        android:fontFamily="@font/custom_font"
+        android:textSize="16dp"
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Job name" />
+
+    <TextView
+        android:id="@+id/compnynm"
+        android:fontFamily="@font/custom_font"
+        android:textSize="15dp"
+        android:layout_marginTop="3dp"
+        android:textColor="@color/dark_orange"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Company name" />
+
+    <LinearLayout
+        android:weightSum="3"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="3dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:src="@drawable/exp"
+            android:layout_width="15dp"
+            android:padding="0dp"
+            android:layout_height="15dp"/>
+
+        <TextView
+            android:singleLine="true"
+            android:fontFamily="@font/custom_font"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAlignment="textStart"
+            android:textColor="@color/black"
+            android:id="@+id/exp"/>
+
+        <ImageView
+            android:padding="0dp"
+            android:src="@drawable/amt"
+            android:layout_width="15dp"
+            android:layout_height="15dp"/>
+
+        <TextView
+            android:singleLine="true"
+            android:fontFamily="@font/custom_font"
+            android:textAlignment="textStart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:id="@+id/amt"/>
+
+        <ImageView
+            android:padding="0dp"
+            android:src="@drawable/loc"
+            android:layout_width="15dp"
+            android:layout_height="15dp"/>
+
+        <TextView
+            android:singleLine="true"
+            android:textAlignment="textStart"
+            android:fontFamily="@font/custom_font"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:id="@+id/loc"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/jobdesp"
+        android:fontFamily="@font/custom_font"
+        android:textSize="14dp"
+        android:layout_marginTop="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Job Descp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/click2"
+        android:visibility="gone"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:padding="5dp"
+            android:id="@+id/adimg"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="@drawable/gradient"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/download"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:padding="5dp"
+                    android:src="@drawable/download"
+                    android:layout_width="25dp"
+                    android:tint="@color/white"
+                    android:layout_height="25dp"/>
+
+                <TextView
+                    android:text="डाउनलोड"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:textColor="@color/white"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/custom_font"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/call"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:padding="5dp"
+                    android:src="@drawable/call"
+                    android:layout_width="25dp"
+                    android:tint="@color/white"
+                    android:layout_height="25dp"/>
+
+                <TextView
+                    android:text="कॉल"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/custom_font"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:textColor="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/share"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:padding="5dp"
+                    android:src="@drawable/shre"
+                    android:layout_width="25dp"
+                    android:tint="@color/white"
+                    android:layout_height="25dp"/>
+
+                <TextView
+                    android:text="शेयर"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/custom_font"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:textColor="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/whatsapp"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:padding="5dp"
+                    android:src="@drawable/whatsapp"
+                    android:layout_width="25dp"
+                    android:tint="@color/white"
+                    android:layout_height="25dp"/>
+
+                <TextView
+                    android:text="व्हाट्सएप"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/custom_font"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:textColor="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

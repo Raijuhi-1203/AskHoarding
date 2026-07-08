@@ -1,0 +1,11 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.AskHoarding" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your light theme here. -->
+         <item name="colorPrimary">@color/appcolor</item>
+        <item name="colorPrimaryDark">@color/appcolor</item>
+        <item name="colorAccent">@color/appcolor</item>
+
+    </style>
+
+</resources>

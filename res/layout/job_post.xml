@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/header"/>
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <androidx.core.widget.NestedScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_above="@+id/bt_addcart">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="10dp"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/custom_font"
+                                    android:text="Mobile 1"
+                                    android:textColor="@color/black"
+                                    android:textSize="14dp"
+                                    android:textStyle="bold" />
+
+                                <EditText
+                                    android:id="@+id/mob1"
+                                    android:inputType="number"
+                                    android:maxLength="10"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/custom_font"
+                                    android:textColor="@color/black"
+                                    android:textSize="16dp" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/custom_font"
+                                    android:text="Mobile 2"
+                                    android:textColor="@color/black"
+                                    android:textSize="14dp"
+                                    android:textStyle="bold" />
+
+
+                                <EditText
+                                    android:inputType="number"
+                                    android:maxLength="10"
+                                    android:id="@+id/mob2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/custom_font"
+                                    android:textColor="@color/black"
+                                    android:textSize="16dp" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/custom_font"
+                                    android:text="Mobile 3"
+                                    android:textColor="@color/black"
+                                    android:textSize="14dp"
+                                    android:textStyle="bold" />
+
+                                <EditText
+                                    android:inputType="number"
+                                    android:maxLength="10"
+                                    android:id="@+id/mob3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/custom_font"
+                                    android:textColor="@color/black"
+                                    android:textSize="16dp" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/custom_font"
+                                    android:text="Category"
+                                    android:textColor="@color/black"
+                                    android:textSize="14dp"
+                                    android:textStyle="bold" />
+
+                                <LinearLayout
+                                    android:layout_margin="5dp"
+                                    android:background="@drawable/spnrbox"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40dp"
+                                    android:orientation="horizontal">
+
+                                <Spinner
+                                    android:id="@+id/spnrcat"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/custom_font" />
+
+                                </LinearLayout>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/custom_font"
+                                    android:text="City"
+                                    android:textColor="@color/black"
+                                    android:textSize="14dp"
+                                    android:textStyle="bold" />
+
+                                <LinearLayout
+                                    android:layout_margin="5dp"
+                                    android:background="@drawable/spnrbox"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40dp"
+                                    android:orientation="horizontal">
+
+                                    <Spinner
+                                        android:id="@+id/spnr"
+                                        android:fontFamily="@font/custom_font"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="40dp" />
+
+                                </LinearLayout>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/custom_font"
+                                    android:text="Upload Photo"
+                                    android:textColor="@color/black"
+                                    android:textSize="14dp"
+                                    android:textStyle="bold" />
+
+                                <Button
+                                    android:id="@+id/choosefile"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="35dp"
+                                    android:layout_margin="5dp"
+                                    android:fontFamily="@font/custom_font"
+                                    android:text="Choose Image"
+                                    android:textSize="11dp" />
+
+                                <TextView
+                                    android:id="@+id/filename"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/custom_font"
+                                    android:textAlignment="center"
+                                    android:textSize="14dp" />
+
+                                <Button
+                                    android:id="@+id/btnpost"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40dp"
+                                    android:layout_margin="15dp"
+                                    android:background="@drawable/button"
+                                    android:fontFamily="@font/custom_font"
+                                    android:text="Post"
+                                    android:textAllCaps="false"
+                                    android:textColor="@color/white" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </androidx.core.widget.NestedScrollView>
+                </LinearLayout>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
